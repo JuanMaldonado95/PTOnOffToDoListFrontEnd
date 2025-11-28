@@ -56,7 +56,7 @@ src/
 | Patrón | Uso | Beneficio |
 |--------|-----|-----------|
 | **Standalone Components** | Todos los componentes | Mejor tree-shaking y carga modular |
-| **Reactive Forms** | Formularios con validación | Control y validación robusta |
+| **Template Forms** | Formularios con validación | Control y validación robusta |
 | **Guards** | Protección de rutas | Seguridad en navegación |
 | **Interceptors** | Manejo de HTTP | Centralización de tokens y errores |
 | **Services** | Lógica de negocio | Separación de responsabilidades |
