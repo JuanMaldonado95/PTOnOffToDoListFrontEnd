@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+@import "primeicons/primeicons.css";
+
+html,
+body {
+    height: 100%;
+    margin: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.p-toast-message {
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 1;
+    background: none !important;
+}
+
+.p-toast-message-success {
+    background-color: #10b981 !important;
+    border-left: 0 !important;
+}
+
+.p-toast-message-success .p-toast-message-content {
+    background-color: #10b981 !important;
+    color: #ffffff;
+}
+
+.p-toast-message-success .p-toast-icon,
+.p-toast-message-success .p-toast-icon-close {
+    color: #ffffff !important;
+}
+
+.p-toast-message-error {
+    background-color: #ef4444 !important;
+    border-left: 0 !important;
+}
+
+.p-toast-message-error .p-toast-message-content {
+    background-color: #ef4444 !important;
+    color: #ffffff;
+}
+
+.p-toast-message-error .p-toast-icon,
+.p-toast-message-error .p-toast-icon-close {
+    color: #ffffff !important;
+}
+
+.p-toast-message-warn {
+    background-color: #f59e0b !important;
+    border-left: 0 !important;
+}
+
+.p-toast-message-warn .p-toast-message-content {
+    background-color: #f59e0b !important;
+    color: #ffffff;
+}
+
+.p-toast-message-warn .p-toast-icon,
+.p-toast-message-warn .p-toast-icon-close {
+    color: #ffffff !important;
+}
+
+.p-toast-message-info {
+    background-color: #3b82f6 !important;
+    border-left: 0 !important;
+}
+
+.p-toast-message-info .p-toast-message-content {
+    background-color: #3b82f6 !important;
+    color: #ffffff;
+}
+
+.p-toast-message-info .p-toast-icon,
+.p-toast-message-info .p-toast-icon-close {
+    color: #ffffff !important;
+}

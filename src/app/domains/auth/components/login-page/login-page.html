@@ -1,0 +1,30 @@
+<div class="flex justify-center items-center py-12 px-4 min-h-[calc(100vh-100px)]">
+    <p-card header="Iniciar Sesión" subheader="Accede a la gestión de tareas"
+        styleClass="shadow-2xl max-w-sm w-full bg-white rounded-xl">
+
+        <form class="space-y-6" (ngSubmit)="login()">
+
+            <div class="p-field flex flex-col">
+                <label for="tUserName" class="mb-2 text-gray-700 font-medium">Usuario (Demo: user@test.com)</label>
+                <input pInputText id="tUserName" type="tUserName" [(ngModel)]="tUserName" name="tUserName"
+                    placeholder="Ingresa tu Usuario" required
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-150" />
+            </div>
+
+            <div class="p-field flex flex-col">
+                <label for="tPassword" class="mb-2 text-gray-700 font-medium">Contraseña (Demo: 123456)</label>
+                <input pInputText id="tPassword" type="tPassword" [(ngModel)]="tPassword" name="tPassword"
+                    placeholder="Ingresa tu contraseña" required
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-150" />
+            </div>
+
+            <p-button label="Iniciar Sesión" icon="pi pi-sign-in" type="submit" styleClass="p-button-primary w-full"
+                [disabled]="!tUserName || !tPassword || isLoading" [loading]="isLoading"></p-button>
+        </form>
+
+        <p-footer class="pt-4 text-center text-sm text-gray-500">
+            Credenciales de prueba: user@test.com / 123456
+        </p-footer>
+
+    </p-card>
+</div>

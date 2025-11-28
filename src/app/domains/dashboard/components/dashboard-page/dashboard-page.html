@@ -1,0 +1,49 @@
+<div class="p-6">
+    <h1 class="text-4xl font-extrabold mb-6 text-gray-800 border-b pb-2">
+        Dashboard
+    </h1>
+
+    <p class="text-lg text-gray-600 mb-8">
+        Resumen y métricas clave del estado de la gestión de tareas.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <p-card class="shadow-lg hover:shadow-xl transition duration-300 rounded-lg border-l-4 border-blue-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="text-2xl font-semibold text-gray-600">Tareas Totales</span>
+                    <div class="text-5xl font-bold text-blue-600 mt-2">{{ totalTasks }}</div>
+                </div>
+                <i class="pi pi-list text-5xl text-blue-200"></i>
+            </div>
+            <p-divider></p-divider>
+            <div class="text-sm text-gray-500">Número total de tareas registradas en el sistema.</div>
+        </p-card>
+
+        <p-card class="shadow-lg hover:shadow-xl transition duration-300 rounded-lg border-l-4 border-green-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="text-2xl font-semibold text-gray-600">Tareas Completadas</span>
+                    <div class="text-5xl font-bold text-green-600 mt-2">{{ completedTasks }}</div>
+                </div>
+                <i class="pi pi-check-circle text-5xl text-green-200"></i>
+            </div>
+            <p-divider></p-divider>
+            <div class="text-sm text-gray-500">Progreso completado. ¡Buen trabajo!</div>
+        </p-card>
+
+        <p-card class="shadow-lg hover:shadow-xl transition duration-300 rounded-lg border-l-4 border-red-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="text-2xl font-semibold text-gray-600">Tareas Pendientes</span>
+                    <div class="text-5xl font-bold text-red-600 mt-2">{{ pendingTasks }}</div>
+                </div>
+                <i class="pi pi-exclamation-circle text-5xl text-red-200"></i>
+            </div>
+            <p-divider></p-divider>
+            <div class="text-sm text-gray-500">Tareas que aún requieren atención y esfuerzo.</div>
+        </p-card>
+
+    </div>
+</div>
